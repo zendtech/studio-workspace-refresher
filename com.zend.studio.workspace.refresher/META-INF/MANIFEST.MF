@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Zend Studio Workspace Refresher
+Bundle-SymbolicName: com.zend.studio.workspace.refresher;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.zend.studio.workspace.refresher.WorkspaceRefreshPlugin
+Bundle-Vendor: Zend Technologies Ltd.
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.core.resources
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy

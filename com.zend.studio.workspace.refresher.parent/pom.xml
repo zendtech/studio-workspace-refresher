@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.zend</groupId>
+	<artifactId>refresher-parent</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>../com.zend.studio.workspace.refresher</module>
+		<module>../com.zend.studio.workspace.refresher.feature</module>
+		<module>../com.zend.studio.workspace.refresher.repository</module>
+	</modules>
+
+	<properties>
+		<tycho.version>0.21.0</tycho.version>
+		<luna-repo.url>http://download.eclipse.org/releases/luna</luna-repo.url>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>luna</id>
+			<url>${luna-repo.url}</url>
+			<layout>p2</layout>
+		</repository>
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<extensions>true</extensions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<resolver>p2</resolver>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project> 

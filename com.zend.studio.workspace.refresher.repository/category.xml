@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.zend.studio.workspace.refresher.feature_1.0.0.qualifier.jar" id="com.zend.studio.workspace.refresher.feature" version="1.0.0.qualifier" os="">
+      <category name="com.zend.studio.workspace.refresher"/>
+   </feature>
+   <category-def name="com.zend.studio.workspace.refresher" label="Zend Studio Workspace Refresher">
+      <description>
+         Workspace refresh provider for Zend Studio using the File System API introduced in Java 7
+      </description>
+   </category-def>
+</site>
