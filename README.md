@@ -13,7 +13,7 @@ http://wywrzal.vipserv.org/swr_just_temporary_us/
 IMPORTANT: Plugin will be working only with Java 1.7+
 
 # Configuration
-Go to *Windows -> Preferences -> General -> Worksapce* and select option *Refresh using native hooks or pooling*.
+Go to *Window -> Preferences -> General -> Workspace* and select option *Refresh using native hooks or pooling*.
 
 ![screenshot](https://raw.githubusercontent.com/zendtech/studio-workspace-refresher/master/com.zend.studio.workspace.refresher.parent/resources/native_hooks_preference.png)
 
