@@ -17,6 +17,18 @@ Go to *Window -> Preferences -> General -> Workspace* and select option *Refresh
 
 ![screenshot](https://raw.githubusercontent.com/zendtech/studio-workspace-refresher/master/com.zend.studio.workspace.refresher.parent/resources/native_hooks_preference.png)
 
+# Troubleshooting
+
+Under Linux (inotify interface) default maximum inotify watches per user (directories to track) is usualy quite low (e.g. 8192). To check actual value for your system use:
+```
+cat /proc/sys/fs/inotify/max_user_watches
+```
+To change this value permanently add the following line in */etc/sysctl.conf*:
+```
+fs.inotify.max_user_watches=65536
+```
+Every user should adjust this value to environment and needs. More info about maximum value for *max_user_watches* can be found [here](http://askubuntu.com/questions/154255/how-can-i-tell-if-i-am-out-of-inotify-watches).
+
 # License
 
 Zend Studio Workspace Refresher is distributed under the [EPL](https://www.eclipse.org/legal/epl-v10.html).
