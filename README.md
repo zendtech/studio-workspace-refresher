@@ -6,10 +6,8 @@ Workspace refresh provider for Zend Studio using the File System API introduced 
 NOTE: Plugin can be used with any Eclipse package (3.8+). Not only with Zend Studio;-)
 
 # Installation
-Update site:
-```
-http://wywrzal.vipserv.org/swr_just_temporary_us/
-```
+To install/update use [update site](https://github.com/zendtech/studio-workspace-refresher/raw/master/com.zend.studio.workspace.refresher.repository/update/).
+
 IMPORTANT: Plugin will be working only with Java 1.7+
 
 # Configuration
